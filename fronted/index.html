@@ -1,31 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AniNova</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Хедер -->
-    <header>
-        <img src="logo.png" class="logo">
-        <nav>
-            <button>Ожидаемое</button>
-            <button>Просмотрено</button>
-            <button>Добавить аниме</button>
-            <button>Поиск</button>
-            <button>Профиль</button>
+    <!-- Красные линии для отладки -->
+    <div class="debug-line vertical-left"></div>
+    <div class="debug-line vertical-right"></div>
+    <div class="debug-line horizontal-top"></div>
+    <div class="debug-line horizontal-bottom"></div>
+
+    <header class="header">
+        <img src="images/logo.svg" alt="Логотип" class="logo">
+        
+        <nav class="nav-left">
+            <button class="btn expected-btn">Ожидаемое</button>
+            <button class="btn watched-btn">Просмотрено</button>
+        </nav>
+
+        <nav class="nav-right">
+            <button class="icon-btn add-btn">
+                <img src="images/add-ico.svg" alt="Добавить">
+            </button>
+            <button class="icon-btn search-btn">
+                <img src="images/search-ico.svg" alt="Поиск">
+            </button>
+            <button class="icon-btn profile-btn">
+                <img src="images/profile-ico.svg" alt="Профиль">
+            </button>
         </nav>
     </header>
 
-    <!-- Блоки с карточками -->
-    <div class="container">
-        <section id="new-episodes">
-            <h2>Новые эпизоды</h2>
-            <div class="cards" id="new-cards"></div>
-        </section>
-        <!-- Аналогично для других блоков -->
+    <!-- Блок 1: Новые эпизоды -->
+    <section class="anime-section">
+        <h1 class="section-title">Новые эпизоды</h1>
+        <p class="section-subtitle">Самые новые и свежие эпизоды</p>
+        <div class="anime-cards">
+            <div class="anime-card"></div>
+            <div class="anime-card"></div>
+            <div class="anime-card"></div>
+            <div class="anime-card"></div>
+            <div class="anime-card"></div>
+            <div class="anime-card"></div>
+        </div>
+    </section>
+    <!-- Блок 2: Вышедшие -->
+<section class="anime-section">
+    <h1 class="section-title">Вышедшие</h1>
+    <p class="section-subtitle">Полностью вышедшие аниме в любимой озвучке</p>
+    <div class="anime-cards">
+        <div class="anime-card"></div>
+        <div class="anime-card"></div>
+        <div class="anime-card"></div>
+        <div class="anime-card"></div>
+        <div class="anime-card"></div>
+        <div class="anime-card"></div>
     </div>
+</section>
 
-    <script src="scripts.js"></script>
+<!-- Блок 3: Анонсированные -->
+<section class="anime-section">
+    <h1 class="section-title">Анонсированные</h1>
+    <p class="section-subtitle">Аниме которые только анонсировали</p>
+    <div class="anime-cards">
+        <div class="anime-card"></div>
+        <div class="anime-card"></div>
+        <div class="anime-card"></div>
+        <div class="anime-card"></div>
+        <div class="anime-card"></div>
+        <div class="anime-card"></div>
+    </div>
+</section>
+<!-- Футер -->
+<footer class="footer"></footer>
 </body>
 </html>
